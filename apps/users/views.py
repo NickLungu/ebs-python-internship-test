@@ -28,6 +28,8 @@ class RegisterUserView(GenericAPIView):
             **validated_data,
             is_superuser=True,
             is_staff=True,
+            is_verified = True,
+            is_active = True
         )
 
         # Set password
